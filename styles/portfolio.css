@@ -20,6 +20,7 @@ h1 {
 
 h3 {
   font-size: 48px;
+  color: var(--branding-color);
 }
 
 p {
@@ -29,6 +30,12 @@ p {
 
 hr {
   margin: 4px;
+}
+
+p {
+  font-size: 22px;
+  font-family: var(--heading-font-family);
+  color: #272142;
 }
 
 .hero {
@@ -48,6 +55,50 @@ color: #272142;
   font-weight: normal;
   line-height: 2;
   font-size: 24px;
+}
+
+.header {
+  padding: 160px 20px 50px;
+}
+
+.header h1 {
+  background: var(--branding-color);
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: lowercase;
+  border-radius: 4px;
+}
+
+.about-section {
+  padding: 0px 20px 60px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+}
+
+.about-section p {
+  text-align: start;
+  font-size: 12spx;
+  font-weight: normal;
+  font-family: var(--default-font-family);
+}
+
+.about-section img {
+  border-radius: 20px;
+  border: 2px dotted var(--branding-color);
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.certification-section {
+  padding: 0 0 160px;
+}
+
+.certification-section h2 {
+  color: var(--branding-color);
 }
 
 .btn-branding {
@@ -90,19 +141,11 @@ color: #272142;
   border: 4px double white;
 }
 
-.container p {
-  font-size: 22px;
-  font-family: var(--heading-font-family);
-  color: #272142;
-}
 
 @media (max-width: 1024px) {
   h1 {
     font-size: 60px;
    }
-  h2 {
-    font-size: 44px;
-  }
   h3{
     font-size: 30px;
   }
@@ -112,10 +155,35 @@ color: #272142;
     h1 {
     line-height: 1.5;
   }
+  .hero h2 {
+    font-size: 44px;
+  }
+  .about-section {
+    text-align: center;
+  }
+  .about-section p {
+    text-align: center;
+  }
+  .technologies-section {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
   .container p {
     font-size: 26px;
+    text-align: center;
+  }
+  .about-section p {
+    font-size: 20px;
+  }
+  .technologies-section img {
+  display: none;
+}
+  .technologies-section {
+    font-size: 20px;
+  }
+  .header h1 {
+    font-size: 48px;
   }
 }
