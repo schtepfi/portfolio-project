@@ -101,6 +101,12 @@ color: #272142;
   color: var(--branding-color);
 }
 
+.technologies-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -164,7 +170,8 @@ color: #272142;
   .about-section p {
     text-align: center;
   }
-  .technologies-section {
+    .technologies-section {
+    padding: 0 20px;
     font-size: 12px;
   }
 }
@@ -177,13 +184,12 @@ color: #272142;
   .about-section p {
     font-size: 20px;
   }
-  .technologies-section img {
-  display: none;
-}
-  .technologies-section {
-    font-size: 20px;
-  }
+
   .header h1 {
     font-size: 48px;
+  }
+  .technologies-section {
+    padding: 0 30px;
+    font-size: 10px;
   }
 }
