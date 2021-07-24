@@ -1,6 +1,6 @@
 :root {
   --branding-color: #cc97a7da;
-  --secondary-color: #e5dfde;
+  --secondary-color: #eee2e665;
   --heading-font-family: 'Poppins', sans-serif;
   --default-font-family: 'Roboto', sans-serif;
 }
@@ -21,6 +21,11 @@ h1 {
 h3 {
   font-size: 48px;
   color: var(--branding-color);
+}
+
+h4 {
+  font-size: 15px;
+  opacity: 0.6;
 }
 
 p {
@@ -64,47 +69,39 @@ color: #272142;
 .header h1 {
   background: var(--branding-color);
   font-size: 64px;
-  line-height: 80px;
+  line-height: 120px;
   text-transform: lowercase;
   border-radius: 4px;
 }
 
-.about-section {
-  padding: 0px 20px 60px;
-}
-
-.about-section h2 {
+.content-section h2 {
   font-size: 24px;
   font-family: var(--default-font-family);
   line-height: 1.5;
 }
 
-.about-section p {
+.content-section p {
   text-align: start;
-  font-size: 12spx;
   font-weight: normal;
   font-family: var(--default-font-family);
 }
 
-.about-section img {
+.content-section img {
   border-radius: 20px;
-  border: 2px dotted var(--branding-color);
+  border: 4px double var(--secondary-color);
   max-width: 80%;
   display: block;
   margin: 0 auto;
 }
-.certification-section {
-  padding: 0 0 160px;
-}
 
-.certification-section h2 {
+.subtitle-section h2 {
   color: var(--branding-color);
 }
 
-.technologies-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.bg-light {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .btn-branding {
@@ -162,15 +159,13 @@ color: #272142;
     line-height: 1.5;
   }
   .hero h2 {
-    font-size: 44px;
+    font-size: 30px;
   }
   .about-section {
     text-align: center;
   }
-  .about-section p {
-    text-align: center;
-  }
-    .technologies-section {
+
+  .technologies-section {
     padding: 0 20px;
     font-size: 12px;
   }
