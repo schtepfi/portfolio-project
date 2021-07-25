@@ -44,6 +44,17 @@ p {
   color: #272142;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+  opacity: 0.5;
+}
+
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -99,10 +110,15 @@ color: #272142;
   color: var(--branding-color);
 }
 
-.subtitle-section a {
+.contact-section a {
     text-decoration: none;
-    color: var(--branding-color);
-    opacity: 50%;
+    color: black;
+    opacity: 0.5;
+}
+
+.contact-section a:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
 }
 
 .bg-light {
