@@ -33,42 +33,112 @@ h6 {
   opacity: 0.5;
 }
 
-p {
-  font-size: 20px;
-  text-align: center;
-}
-
 hr {
-  margin: 4px;
+  margin: 4px 0;
   color: var(--branding-color);
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
+  text-align: center;
   font-family: var(--heading-font-family);
   color: #272142;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
 }
 
 a:hover {
   color: var(--branding-color);
-  transition: all 100ms ease-in-out;
   opacity: 0.5;
+}
+
+nav {
+  padding: 20px 60px 0;
+  font-size: 18px;
+}
+
+nav ul {
+  padding: 30px 15px 15px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  font-family: var(--default-font-family) !important;
+  color: #4c4c4cc4;
+  line-height: 34px;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+
+nav li.active a {
+  color: var(--branding-color);
+  font-weight: bolder;
+}
+
+span {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+form {
+  display: block;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  margin-bottom: 40px;
+}
+
+footer {
+  font-size: 24px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  padding: 15px;
+  margin: 60px -12px 30px;
+}
+
+footer .social-links a {
+  padding: 10px 14px;
+  margin: 0 20px;
+  font-size: 20px;
+  background-color: var(--branding-color);
+  border-radius: 50%;
+  color: white;
+}
+
+footer .social-links a:hover {
+  color: var(--branding-color);
+  background: white;
+}
+
+.nav-line {
+  color: var(--branding-color);
 }
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 100px 0px;
+  padding: 50 0px;
 }
 
 .hero p {
 font-size: 36px;
-margin: 0;
+padding-top: 90px;
 color: #272142;
 }
 
@@ -101,29 +171,34 @@ color: #272142;
   text-align: start;
   font-weight: normal;
   font-family: var(--default-font-family);
+  font-size: 18px;
 }
 
 .content-section img {
-  border-radius: 20px;
-  border: 4px double var(--secondary-color);
-  max-width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+.coding-projects img:hover {
+  transform: scale(1.1);
+  margin-top: 20px;
 }
 
 .subtitle-section h2 {
   color: var(--branding-color);
 }
 
-.contact-section a {
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
+.subtitle-section img{
+  border: 5px solid white;
+  max-width: 80%;
 }
 
-.contact-section a:hover {
-  color: var(--branding-color);
-  transition: all 100ms ease-in-out;
+.contact-section {
+  margin-top: 150px;
+}
+
+.contact-section a {
+  opacity: 0.5;
 }
 
 .bg-light {
@@ -175,69 +250,6 @@ color: #272142;
 
 .logo {
   max-width: 200px;
-}
-
-nav {
-  padding: 20px 60px 0;
-  font-size: 18px;
-}
-
-nav ul {
-  padding: 30px 15px 15px;
-}
-
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
-}
-
-nav a {
-  font-family: var(--default-font-family) !important;
-  color: #4c4c4cc4;
-  line-height: 34px;
-  margin: 8px 0;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover {
-  color: var(--branding-color);
-}
-
-nav li.active a {
-  color: var(--branding-color);
-  font-weight: bolder;
-}
-
-.nav-line {
-  color: var(--branding-color);
-}
-
-footer {
-  font-size: 24px;
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-  padding: 15px;
-  margin: 60px -12px;
-}
-
-footer .social-links a {
-  padding: 10px 14px;
-  margin: 0 20px;
-  font-size: 20px;
-  background-color: var(--branding-color);
-  border-radius: 50%;
-  color: white;
-  transition: all 100ms ease-in-out;
-}
-
-footer .social-links a:hover {
-  color: var(--branding-color);
-  background: white;
-  border-color: var(--branding-color);
 }
 
 @media (max-width: 1024px) {
