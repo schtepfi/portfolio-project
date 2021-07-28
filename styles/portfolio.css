@@ -28,9 +28,16 @@ h4 {
   opacity: 0.6;
 }
 
+h5 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 h6 {
   padding-top: 20px;
   opacity: 0.5;
+  text-align: center;
 }
 
 hr {
@@ -92,16 +99,12 @@ span {
 
 form {
   display: block;
-}
-
-label {
-  display: block;
-  text-align: left;
-  margin-bottom: 10px;
+  font-family: var(--default-font-family);
+  margin: 30px 20px;
 }
 
 input, textarea {
-  margin-bottom: 40px;
+  margin: 7px 0 40px;
 }
 
 footer {
@@ -110,6 +113,11 @@ footer {
   border-radius: 4px;
   padding: 15px;
   margin: 60px -12px 30px;
+  text-align: center;
+}
+
+footer .social-links {
+  margin: 18px;
 }
 
 footer .social-links a {
@@ -126,6 +134,10 @@ footer .social-links a:hover {
   background: white;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 .nav-line {
   color: var(--branding-color);
 }
@@ -133,7 +145,6 @@ footer .social-links a:hover {
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 50 0px;
 }
 
 .hero p {
@@ -147,10 +158,48 @@ color: #272142;
   font-weight: normal;
   line-height: 2;
   font-size: 24px;
+  margin: 50px 0 30px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+} 
+
+.btn-branding:hover {
+  opacity: 0.7;
+  background-color: white;
+  color: var(--branding-color);
+  border: 4px double var(--branding-color);
+  transition: all 200ms ease;
+}
+
+.btn-projects {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.btn-projects:hover {
+  opacity: 0.7;
+  background-color: var(--branding-color);
+  color: white;
+  border: 4px double white;
+  transition: all 200ms ease;
 }
 
 .header {
-  padding: 120px 0px 50px;
+  padding: 120px 0px 20px;
+  text-align: center;
 }
 
 .header h1 {
@@ -159,6 +208,10 @@ color: #272142;
   line-height: 120px;
   text-transform: lowercase;
   border-radius: 4px;
+}
+
+.content-section, .subtitle-section {
+  padding: 40px 0 0;
 }
 
 .content-section h2 {
@@ -174,82 +227,24 @@ color: #272142;
   font-size: 18px;
 }
 
-.content-section img {
-  display: block;
-  margin: 0 auto;
-}
-
-.coding-projects img:hover {
-  transform: scale(1.1);
-  margin-top: 20px;
-}
-
 .subtitle-section h2 {
   color: var(--branding-color);
 }
 
-.subtitle-section img{
+.subtitle-section img {
   border: 5px solid white;
   max-width: 80%;
 }
 
 .contact-section {
-  margin-top: 150px;
+  margin-top: 180px;
+  text-align: center;
 }
 
 .contact-section a {
   opacity: 0.5;
-}
-
-.bg-light {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-} 
-
-.btn-branding {
-  transition: all 200ms ease;
-}
-.btn-branding:hover {
-  opacity: 0.7;
-  background-color: white;
-  color: var(--branding-color);
-  border: 4px double var(--branding-color);
-}
-
-.btn-projects {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-}
-
-.btn-projects {
-  transition: all 200ms ease;
-}
-.btn-projects:hover {
-  opacity: 0.7;
-  background-color: var(--branding-color);
-  color: white;
-  border: 4px double white;
-  transition: all 100ms ease-in-out;
-}
-
-.logo {
-  max-width: 200px;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
