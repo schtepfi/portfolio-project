@@ -32,6 +32,7 @@ h5 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
+  font-size: 18px;
 }
 
 h6 {
@@ -157,7 +158,12 @@ padding: 10px;
   font-family: var(--default-font-family);
   line-height: 2;
   font-size: 24px;
-  margin: 50px 0 30px;
+  margin: 50px 0 50px;
+}
+
+.hero .heading {
+  font-size: 30px;
+  margin: 70px 0 20px;
 }
 
 .btn-branding {
@@ -210,7 +216,7 @@ padding: 10px;
 }
 
 .content-section, .subtitle-section {
-  padding: 40px 0 0;
+  padding: 40px 0 0 7px;
 }
 
 .content-section h2 {
@@ -233,7 +239,11 @@ padding: 10px;
 
 .subtitle-section img {
   border: 5px solid white;
-  max-width: 80%;
+  max-width: 90%;
+}
+
+.button-section {
+  margin-top: 30px;
 }
 
 .contact-section {
@@ -248,23 +258,66 @@ padding: 10px;
 }
 
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 60px;
-   }
-  h3{
+  
+  nav {
+    padding: 10px 24px 0;
+  }
+
+    h3{
     font-size: 30px;
   }
-  .hero {
-    padding: 80px 20px;
+
+  .header {
+    padding: 120px 0 0;
   }
-    h1 {
-    line-height: 1.5;
+    .header h1 {
+    font-size: 45px;
+    line-height: 1.75;
   }
+
   .hero h2 {
-    font-size: 30px;
+    font-size: 15px;
+    margin: 0px;
+    padding-bottom: 15px;
   }
-  .about-section {
+  .hero .heading {
+    font-size: 25px;
+    margin: 15px 0 8px;
+    padding: 5px 0 0;
+  }  
+  .hero .subtitle {
+    padding: 15px 0 0;
+    font-size: 18px;
+  }
+  .hero p {
+    font-size: 15px;
+    padding: 10px  20px 10px;
+    margin: 0 0 -5px 0;
+  }
+
+  .content-section {
+    padding: 15px 0;
     text-align: center;
+  }
+
+  .subtitle-section{
+    padding: 20px 12px;
+  }
+  .subtitle-section h2 {
+    margin: 30px !important;
+  }
+  .subtitle-section p {
+    text-align: center;
+  }
+  .subtitle-section h4 {
+    margin: -17px 0 20px !important;
+  }
+  .subtitle-section img {
+    display: block;
+    margin: 0 auto;
+}
+  .button-section {
+    margin: 25px 0 5px;
   }
 
   .technologies-section {
@@ -272,9 +325,13 @@ padding: 10px;
     font-size: 12px;
   }
 
-  nav {
-    padding: 0 24px 6px;
+  input, textarea {
+  text-align: center;
+}
+  footer {
+    margin-top: 15px; 
   }
+
 }
 
 @media (max-width: 576px) {
