@@ -330,7 +330,10 @@ padding: 10px;
 
   .technologies-section {
     padding: 0 20px;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  .technologies-section img {
+    max-width: 120%;
   }
 
   .contact {
